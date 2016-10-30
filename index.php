@@ -2,7 +2,7 @@
 <?php
 
 require 'vendor/autoload.php';
-$db = new PDO('sqlite:./store.db');
+$db = new PDO('sqlite:' . getenv('DICE_DB'));
 
 $bonus  = 0;
 $sides  = 0;
